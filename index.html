@@ -76,20 +76,32 @@
 <button class="btn" onclick="checkJonasGrenze()">Beurteilung prüfen</button><div id="jonasGrenzeFeedback" class="feedback" aria-live="polite"></div></div>
 <div class="callout"><strong>Merke:</strong> Muskelmasse wiegt ebenfalls. Der BMI beschreibt nur das Verhältnis von Gewicht zu Größe – nicht, wie viel davon Fett oder Muskeln sind. Auch bei einem muskulösen Menschen sollten weitere Beobachtungen und gegebenenfalls geeignete Messverfahren in die Einschätzung einfließen.</div>
 </div><h3>Mini-Aufgabe</h3><div class="question"><p>Welche Aussage über den BMI ist richtig?</p><label><input type="radio" name="q5" value="a"> Der BMI zeigt ganz genau, wie viel Körperfett eine Person hat.</label><label><input type="radio" name="q5" value="b"> Der BMI ist eine Orientierung; er berücksichtigt zum Beispiel Muskelmasse und Fettverteilung nicht ausreichend.</label><label><input type="radio" name="q5" value="c"> Ein BMI ersetzt die pflegerische Einschätzung.</label><button class="btn" onclick="check('q5','b','f5')">Antwort prüfen</button><div id="f5" class="feedback"></div></div><button class="btn" onclick="complete(5)">Station als erledigt markieren ✓</button></section>
-<section class="finish locked" id="finish"><h2>🔒 Abschlussquiz</h2><p id="unlockText">Noch gesperrt: Bearbeite und überprüfe die Mini-Aufgaben aller fünf Stationen. Markiere anschließend jede Station als erledigt.</p><button class="btn" id="quizStart" onclick="openQuiz()" disabled>🔒 Abschlussquiz gesperrt</button></section>
-<section class="panel" id="quiz"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>🎯 Abschlussquiz</h2><p>Beantworte alle fünf Fragen. Du erhältst anschließend eine Rückmeldung.</p>
-<div class="question"><strong>1. Nenne zwei Faktoren, die den Ernährungszustand beeinflussen können.</strong><textarea id="a1" rows="3" style="width:100%;margin-top:8px;border:1px solid #bdcbd7;border-radius:8px;padding:9px" placeholder="Deine Antwort ..."></textarea></div>
-<div class="question"><strong>2. Nenne zwei Grundsätze, die eine Gewichtsmessung vergleichbar machen.</strong><textarea id="a2" rows="3" style="width:100%;margin-top:8px;border:1px solid #bdcbd7;border-radius:8px;padding:9px" placeholder="Deine Antwort ..."></textarea></div>
-<div class="question"><strong>3. Nenne zwei wichtige Punkte bei der Körpergrößenmessung.</strong><textarea id="a3" rows="3" style="width:100%;margin-top:8px;border:1px solid #bdcbd7;border-radius:8px;padding:9px" placeholder="Deine Antwort ..."></textarea></div>
-<div class="question"><strong>4. Wann und wo wird das Maßband beim Taillenumfang angelegt?</strong><textarea id="a4" rows="3" style="width:100%;margin-top:8px;border:1px solid #bdcbd7;border-radius:8px;padding:9px" placeholder="Deine Antwort ..."></textarea></div>
-<div class="question"><strong>5. Berechne den BMI: Gewicht 80 kg, Größe 1,60 m. (Formel: kg ÷ m²)</strong><input id="a5" type="number" step="0.1" style="margin-top:8px;border:1px solid #bdcbd7;border-radius:8px;padding:9px" placeholder="BMI"></div>
+<section class="finish locked" id="finish" hidden style="display:none"><h2>🔒 Abschlussquiz</h2><p id="unlockText">Noch gesperrt: Bearbeite und überprüfe die Mini-Aufgaben aller fünf Stationen. Markiere anschließend jede Station als erledigt.</p><button class="btn" id="quizStart" onclick="openQuiz()" disabled>🔒 Abschlussquiz gesperrt</button></section>
+<section class="panel" id="quiz"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>🎯 Abschlussquiz</h2><p>Beantworte alle fünf Fragen: vier Multiple-Choice-Aufgaben und eine Freitextfrage. Wähle jeweils eine Antwort aus.</p>
+<div class="question"><strong>1. Was ist bei Frau Weber ein Hinweis auf eine mögliche Veränderung des Ernährungszustandes?</strong>
+<label><input type="radio" name="final1" value="a"> Sie isst wenig und ihre Kleidung sitzt lockerer.</label>
+<label><input type="radio" name="final1" value="b"> Sie trägt eine Brille.</label>
+<label><input type="radio" name="final1" value="c"> Sie hat heute Besuch erhalten.</label></div>
+<div class="question"><strong>2. Wie kann das Körpergewicht möglichst vergleichbar gemessen werden?</strong>
+<label><input type="radio" name="final2" value="a"> Jeden Tag mit einer anderen Waage.</label>
+<label><input type="radio" name="final2" value="b"> Möglichst mit derselben Waage und unter ähnlichen Bedingungen.</label>
+<label><input type="radio" name="final2" value="c"> Immer direkt nach einer großen Mahlzeit.</label></div>
+<div class="question"><strong>3. Welche Aussage zur Körpergrößenmessung ist richtig?</strong>
+<label><input type="radio" name="final3" value="a"> Schuhe können bei der Messung anbleiben.</label>
+<label><input type="radio" name="final3" value="b"> Die Person soll sich auf die Zehenspitzen stellen.</label>
+<label><input type="radio" name="final3" value="c"> Die Person steht aufrecht mit flachen Füßen und Blick geradeaus.</label></div>
+<div class="question"><strong>4. Was ist bei der Messung des Taillenumfangs richtig?</strong>
+<label><input type="radio" name="final4" value="a"> Das Maßband liegt waagerecht; abgelesen wird am Ende einer normalen Ausatmung.</label>
+<label><input type="radio" name="final4" value="b"> Das Maßband wird möglichst fest eingeschnürt.</label>
+<label><input type="radio" name="final4" value="c"> Die Messung erfolgt während einer tiefen Einatmung.</label></div>
+<div class="question"><strong>5. Freitext: Warum kann der BMI bei einem sehr muskulösen Menschen täuschen?</strong><textarea id="final5" rows="3" style="width:100%;margin-top:8px;border:1px solid #bdcbd7;border-radius:8px;padding:9px" placeholder="Erkläre es in 1–2 Sätzen ..."></textarea></div>
 <button class="btn" id="quizSubmit" onclick="showQuizAnswers()">Antworten abgeben und auswerten</button><div id="quizFeedback" class="result hide" aria-live="polite"></div></section>
-<section class="panel" id="review"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>📝 Deine Auswertung und Fehlerübersicht</h2><p>Vergleiche deine Antworten mit den Musterlösungen. Bei offenen Fragen entscheidest du selbst, ob deine Antwort inhaltlich richtig ist.</p><div id="reviewContent"></div><div id="reviewStatus" class="callout">Prüfe alle offenen Antworten.</div><button class="btn" id="praiseUnlock" onclick="openPraise()" disabled>🔒 Abschlussseite freischalten</button></section>
+<section class="panel" id="review"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>📝 Deine Auswertung und Fehlerübersicht</h2><p>Vergleiche deine Antworten mit den Musterlösungen. Vier Multiple-Choice-Fragen werden automatisch bewertet. Die Freitextfrage vergleichst du selbst mit der Musterlösung.</p><div id="reviewContent"></div><div id="reviewStatus" class="callout">Prüfe alle offenen Antworten.</div><button class="btn" id="praiseUnlock" onclick="openPraise()" disabled>🔒 Abschlussseite freischalten</button></section>
 <section class="panel" id="praise"><div class="celebrate"><div class="big" aria-hidden="true">🎉🌟</div><h2>Herzlichen Glückwunsch!</h2><p><strong>Du hast die Lernreise zum Ernährungszustand geschafft!</strong></p><p>Du hast beobachtet, gerechnet, nachgedacht und deine Antworten überprüft. Darauf kannst du stolz sein!</p><p>Dein Wissen hilft dir dabei, Veränderungen bei Pflegeempfängern wie Frau Weber aufmerksam wahrzunehmen.</p><button class="btn" onclick="home()">Zurück zur Lerninsel</button></div></section>
 </main><footer>Interaktive Lernseite · Beobachtung des Ernährungszustandes · Lernmaterial für den Unterricht</footer>
 <script>
 
-const done=new Set(),attempted=new Set(),stationMistakes=new Map();
+const done=new Set(),attempted=new Set(),stationMistakes=new Map(),jonasAttempted=new Set();
 let quizSubmitted=false,reviewedAnswers=new Set();
 const stationSolutions={
   1:'Beobachten, gezielt nachfragen, Nahrungsaufnahme und Veränderungen dokumentieren und die zuständige Fachkraft informieren.',
@@ -107,7 +119,8 @@ function updateProgress(){
   s.classList.toggle('done',isDone);
   s.querySelector('button').textContent=isDone?'Erneut erkunden ✓':'Station erkunden';
  });
- const unlocked=n===5,finish=document.getElementById('finish'),btn=document.getElementById('quizStart');
+ const unlocked=n===5&&attempted.size===5&&jonasAttempted.size===2,finish=document.getElementById('finish'),btn=document.getElementById('quizStart');
+ finish.hidden=!unlocked;finish.style.display=unlocked?'block':'none';
  finish.classList.toggle('locked',!unlocked);
  btn.disabled=!unlocked;
  btn.textContent=unlocked?'🎯 Abschlussquiz starten':'🔒 Abschlussquiz gesperrt';
@@ -119,7 +132,7 @@ function openPanel(n){showPanel('p'+n)}
 function home(){hidePanels();window.scrollTo({top:0,behavior:'smooth'})}
 function complete(n){
  const f=document.getElementById('f'+n);
- if(!attempted.has(n)){f.textContent='Bitte beantworte zuerst die Mini-Aufgabe und klicke auf „Antwort prüfen“. Erst danach kannst du die Station abschließen.';f.className='feedback wrong';f.scrollIntoView({behavior:'smooth',block:'center'});return}
+ if(!attempted.has(n)||(n===5&&jonasAttempted.size!==2)){f.textContent='Bitte beantworte und überprüfe alle Fragen dieser Station (in Station 5 auch beide Jonas-Fragen). Erst danach kannst du die Station abschließen.';f.className='feedback wrong';f.scrollIntoView({behavior:'smooth',block:'center'});return}
  done.add(n);updateProgress();
  const btn=document.querySelector('#p'+n+' button[onclick^="complete"]');
  btn.textContent='Erledigt ✓';btn.classList.add('secondary');
@@ -141,49 +154,60 @@ function calcBMI(){
 function checkJonasBmi(){
  const x=document.querySelector('input[name="jonasBmi"]:checked'),f=document.getElementById('jonasBmiFeedback');
  if(!x){f.textContent='Bitte wähle eine Antwort aus.';f.className='feedback wrong';return}
- if(x.value==='b'){f.textContent='Richtig! 100 ÷ (1,80 × 1,80) = 30,9 kg/m².';f.className='feedback correct'}
+ jonasAttempted.add('bmi');if(x.value==='b'){f.textContent='Richtig! 100 ÷ (1,80 × 1,80) = 30,9 kg/m².';f.className='feedback correct'}
  else{f.textContent='Versuche es noch einmal: Gewicht durch Körpergröße zum Quadrat teilen.';f.className='feedback wrong'}
 }
 function checkJonasGrenze(){
  const x=document.querySelector('input[name="jonasGrenze"]:checked'),f=document.getElementById('jonasGrenzeFeedback');
  if(!x){f.textContent='Bitte wähle eine Antwort aus.';f.className='feedback wrong';return}
- if(x.value==='c'){f.textContent='Richtig! Der BMI unterscheidet Muskel- und Fettmasse nicht.';f.className='feedback correct'}
+ jonasAttempted.add('grenze');if(x.value==='c'){f.textContent='Richtig! Der BMI unterscheidet Muskel- und Fettmasse nicht.';f.className='feedback correct'}
  else{f.textContent='Überlege, ob der BMI Fett und Muskeln getrennt misst.';f.className='feedback wrong'}
 }
-function openQuiz(){if(done.size!==5){document.getElementById('unlockText').scrollIntoView({behavior:'smooth'});return}showPanel('quiz')}
+function openQuiz(){if(done.size!==5||attempted.size!==5||jonasAttempted.size!==2){document.getElementById('unlockText').scrollIntoView({behavior:'smooth'});return}showPanel('quiz')}
 const quizQuestions=[
- {title:'1. Faktoren des Ernährungszustandes',answer:'Zum Beispiel Alter, Erkrankungen, Medikamente, Appetit, Kau- oder Schluckprobleme, Bewegung, psychische oder soziale Situation.'},
- {title:'2. Vergleichbare Gewichtsmessung',answer:'Zum Beispiel gleiche Waage, gleiche Tageszeit, nach dem Toilettengang, vor dem Frühstück und ähnliche Kleidung.'},
- {title:'3. Körpergrößenmessung',answer:'Zum Beispiel Schuhe ausziehen, aufrecht stehen, Füße flach, Blick geradeaus, Messschieber waagerecht, Wert dokumentieren.'},
- {title:'4. Taillenumfang',answer:'Maßband waagerecht mittig zwischen unterem Rippenbogen und oberem Beckenkamm anlegen, am Ende einer normalen Ausatmung ablesen.'},
- {title:'5. BMI-Berechnung',answer:'80 ÷ (1,60 × 1,60) = 31,25 ≈ 31,3 kg/m² (Adipositas Grad I nach Erwachsenen-BMI-Klassifikation).'}
+ {title:'1. Beobachtung bei Frau Weber',answer:'Sie isst wenig und ihre Kleidung sitzt lockerer.',correct:'a'},
+ {title:'2. Vergleichbare Gewichtsmessung',answer:'Möglichst mit derselben Waage und unter ähnlichen Bedingungen messen.',correct:'b'},
+ {title:'3. Körpergrößenmessung',answer:'Aufrecht stehen, Füße flach auf dem Boden und Blick geradeaus.',correct:'c'},
+ {title:'4. Taillenumfang',answer:'Maßband waagerecht anlegen und am Ende einer normalen Ausatmung ablesen.',correct:'a'},
+ {title:'5. Grenzen des BMI (Freitext)',answer:'Der BMI unterscheidet Muskelmasse und Fettmasse nicht. Ein hoher BMI bedeutet bei sehr muskulösen Menschen nicht automatisch einen hohen Körperfettanteil.'}
 ];
 function make(tag,cls,txt){const el=document.createElement(tag);if(cls)el.className=cls;if(txt!==undefined)el.textContent=txt;return el}
 function showQuizAnswers(){
- if(done.size!==5)return;
- const vals=[1,2,3,4,5].map(i=>document.getElementById('a'+i).value.trim());
- if(vals.some(v=>!v)){const b=document.getElementById('quizFeedback');b.textContent='Bitte beantworte zuerst alle fünf Fragen. Du kannst auch „Ich weiß es nicht“ eintragen.';b.classList.remove('hide');return}
+ if(done.size!==5||attempted.size!==5||jonasAttempted.size!==2)return;
+ const choices=[1,2,3,4].map(i=>document.querySelector('input[name="final'+i+'"]:checked'));
+ const free=document.getElementById('final5').value.trim();
+ if(choices.some(x=>!x)||!free){
+  const b=document.getElementById('quizFeedback');b.textContent='Bitte beantworte alle fünf Fragen, bevor du das Quiz abgibst.';b.classList.remove('hide');return;
+ }
  quizSubmitted=true;reviewedAnswers.clear();
  const target=document.getElementById('reviewContent');target.replaceChildren();
  if(stationMistakes.size){
-  const h=make('h3',null,'Deine Fehler aus den Lernstationen');target.append(h);
+  target.append(make('h3',null,'Deine Fehler aus den Lernstationen'));
   for(const [n,m] of [...stationMistakes.entries()].sort((a,b)=>a[0]-b[0])){
-   const box=make('div','review-item');box.append(make('h3',null,'Station '+n),make('p',null,'Deine frühere Antwort: '+m.answer),make('p',null,'Richtige Antwort: '+m.solution));target.append(box)
+   const box=make('div','review-item');box.append(make('h3',null,'Station '+n),make('p',null,'Deine frühere Antwort: '+m.answer),make('p',null,'Richtige Antwort: '+m.solution));target.append(box);
   }
- }else{target.append(make('p','result','In den Lernstationen wurden keine falschen Antworten registriert.'))}
- target.append(make('h3',null,'Dein Abschlussquiz – Antworten vergleichen'));
+ }else target.append(make('p','result','In den Lernstationen wurden keine falschen Antworten registriert.'));
+ target.append(make('h3',null,'Dein Abschlussquiz – automatische Auswertung'));
+ let score=0;
  quizQuestions.forEach((q,i)=>{
-  const box=make('div','review-item');box.append(make('h3',null,q.title),make('p',null,'Deine Antwort: '+vals[i]),make('p',null,'Musterlösung: '+q.answer));
-  if(i===4){
-   const n=Number(vals[i].replace(',','.')),correct=Number.isFinite(n)&&Math.abs(n-31.25)<0.11;
-   box.append(make('p',correct?'correct':'wrong',correct?'✓ Dein BMI-Ergebnis ist richtig.':'✗ Dein BMI-Ergebnis weicht von der Musterlösung ab.'));
-   if(correct)reviewedAnswers.add(i);
-   else {const l=make('label','selfcheck','');const cb=document.createElement('input');cb.type='checkbox';cb.addEventListener('change',()=>markReviewed(i,cb.checked));l.append(cb,document.createTextNode('Ich habe die richtige Rechnung nachvollzogen.'));box.append(l)}
+  const box=make('div','review-item');box.append(make('h3',null,q.title));
+  if(i<4){
+   const chosen=choices[i],correct=chosen.value===q.correct;
+   if(correct)score++;
+   box.append(make('p',null,'Deine Antwort: '+chosen.parentElement.textContent.trim()));
+   box.append(make('p',correct?'correct':'wrong',correct?'✓ Richtig beantwortet':'✗ Nicht richtig beantwortet'));
+   box.append(make('p',null,'Richtige Antwort: '+q.answer));
+   reviewedAnswers.add(i);
   }else{
-   const l=make('label','selfcheck','');const cb=document.createElement('input');cb.type='checkbox';cb.addEventListener('change',()=>markReviewed(i,cb.checked));l.append(cb,document.createTextNode('Ich habe meine Antwort mit der Musterlösung verglichen.'));box.append(l);
+   box.append(make('p',null,'Deine Antwort: '+free),make('p',null,'Musterlösung: '+q.answer));
+   const label=make('label','selfcheck');
+   const cb=document.createElement('input');cb.type='checkbox';cb.addEventListener('change',()=>markReviewed(i,cb.checked));
+   label.append(cb,document.createTextNode('Ich habe meine Freitextantwort mit der Musterlösung verglichen.'));
+   box.append(label);
   }
   target.append(box);
  });
+ target.insertBefore(make('p','result','Multiple Choice: '+score+' von 4 Fragen richtig beantwortet. Die Freitextfrage wird nicht automatisch benotet.'),target.querySelector('h3:last-of-type').nextSibling);
  updateReviewStatus();showPanel('review');
 }
 function markReviewed(i,checked){if(checked)reviewedAnswers.add(i);else reviewedAnswers.delete(i);updateReviewStatus()}
@@ -191,8 +215,15 @@ function updateReviewStatus(){
  const ready=quizSubmitted&&reviewedAnswers.size===5;
  document.getElementById('praiseUnlock').disabled=!ready;
  document.getElementById('praiseUnlock').textContent=ready?'🎉 Abschlussseite öffnen':'🔒 Abschlussseite freischalten';
- document.getElementById('reviewStatus').textContent=ready?'Sehr gut! Du hast alle Antworten überprüft. Deine Abschlussseite ist freigeschaltet.':'Vergleiche bitte noch '+(5-reviewedAnswers.size)+' Antwort(en) mit den Musterlösungen.';
+ document.getElementById('reviewStatus').textContent=ready?'Sehr gut! Du hast deine Freitextantwort überprüft. Deine Abschlussseite ist freigeschaltet.':'Vergleiche bitte deine Freitextantwort mit der Musterlösung und bestätige dies.';
 }
-function openPraise(){if(quizSubmitted&&reviewedAnswers.size===5)showPanel('praise')}
+function openPraise(){if(quizSubmitted&&reviewedAnswers.size===5&&done.size===5)showPanel('praise')}
+document.querySelectorAll('#p1 input[type="radio"],#p2 input[type="radio"],#p3 input[type="radio"],#p4 input[type="radio"],#p5 input[type="radio"]').forEach(input=>input.addEventListener('change',()=>{
+ const n=Number(input.closest('.panel').id.slice(1));
+ if(input.name==='jonasBmi')jonasAttempted.delete('bmi');
+ else if(input.name==='jonasGrenze')jonasAttempted.delete('grenze');
+ else attempted.delete(n);
+ done.delete(n);updateProgress();
+}));
 updateProgress();
 </script></body></html>
