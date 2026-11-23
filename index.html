@@ -138,7 +138,7 @@ function openPanel(n){showPanel('p'+n)}
 function home(){hidePanels();window.scrollTo({top:0,behavior:'smooth'})}
 function complete(n){
  const f=document.getElementById('f'+n);
- if(!attempted.has(n)||(n===5&&jonasAttempted.size!==2)){f.textContent='Bitte beantworte und überprüfe alle Fragen dieser Station (in Station 5 auch beide Jonas-Fragen). Erst danach können Sie die Station abschließen.';f.className='feedback wrong';f.scrollIntoView({behavior:'smooth',block:'center'});return}
+ if(!attempted.has(n)||(n===5&&jonasAttempted.size!==2)){f.textContent='Bitte beantworten und überprüfen Sie alle Fragen dieser Station (in Station 5 auch beide Jonas-Fragen). Erst danach können Sie die Station abschließen.';f.className='feedback wrong';f.scrollIntoView({behavior:'smooth',block:'center'});return}
  done.add(n);updateProgress();
  const btn=document.querySelector('#p'+n+' button[onclick^="complete"]');
  btn.textContent='Erledigt ✓';btn.classList.add('secondary');
