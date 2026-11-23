@@ -207,7 +207,7 @@ function showQuizAnswers(){
   }
   target.append(box);
  });
- target.insertBefore(make('p','result','Multiple Choice: '+score+' von 4 Fragen richtig beantwortet. Die Freitextfrage wird nicht automatisch benotet.'),target.querySelector('h3:last-of-type').nextSibling);
+ target.prepend(make('p','result','Multiple Choice: '+score+' von 4 Fragen richtig beantwortet. Die Freitextfrage wird nicht automatisch benotet.'));
  updateReviewStatus();showPanel('review');
 }
 function markReviewed(i,checked){if(checked)reviewedAnswers.add(i);else reviewedAnswers.delete(i);updateReviewStatus()}
