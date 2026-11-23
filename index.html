@@ -18,12 +18,12 @@
 .locked{opacity:.62}.locked .btn{background:#74808b;cursor:not-allowed}.unlock-note{font-size:.92rem;color:#58697b;margin:10px 0}.review-item{background:white;border:1px solid #dce5eb;border-radius:12px;padding:13px;margin:12px 0}.review-item h3{margin:0 0 6px}.selfcheck{display:block;margin:10px 0;padding:8px;background:#f0f6f7;border-radius:8px}.selfcheck input{margin-right:8px}.celebrate{text-align:center;padding:40px 22px;background:linear-gradient(135deg,#e8f7f0,#eaf1ff);border:1px solid #c5e3d7;border-radius:20px}.celebrate .big{font-size:4rem}.celebrate h2{font-size:2rem;color:#225e65}button:disabled{cursor:not-allowed;opacity:.6}
 </style></head>
 <body>
-<header><div class="wrap"><div class="eyebrow">Digitale Lernreise · Pflegefachhilfe · LF 03</div><h1>Ernährungszustand entdecken</h1><p>Erkunde die Stationen, probiere Dinge aus und überprüfe dein Wissen. Du kannst die Reihenfolge selbst wählen.</p></div></header>
+<header><div class="wrap"><div class="eyebrow">Digitale Lernreise · Pflegefachhilfe · LF 03</div><h1>Ernährungszustand entdecken</h1><p>Erkunden Sie die Stationen, probieren Sie Dinge aus und überprüfen Sie Ihr Wissen. Sie können die Reihenfolge selbst wählen.</p></div></header>
 <main class="wrap">
 
 <section class="situation" aria-label="Handlungssituation">
-<div><div class="eyebrow" style="color:#397d80;opacity:1">Deine Handlungssituation</div><h2>Frau Weber braucht deine Aufmerksamkeit</h2>
-<p>Frau Weber (78) wirkt seit einigen Tagen müde. Beim Frühstück isst sie nur wenige Bissen. Eine Pflegekraft bemerkt, dass ihre Kleidung lockerer sitzt. <strong>Wie kannst du Veränderungen ihres Ernährungszustandes erkennen und beobachten?</strong> Erkunde die Stationen und sammle Hinweise.</p></div>
+<div><div class="eyebrow" style="color:#397d80;opacity:1">Ihre Handlungssituation</div><h2>Frau Weber braucht Ihre Aufmerksamkeit</h2>
+<p>Frau Weber (78) wirkt seit einigen Tagen müde. Beim Frühstück isst sie nur wenige Bissen. Eine Pflegekraft bemerkt, dass ihre Kleidung lockerer sitzt. <strong>Wie können Sie Veränderungen ihres Ernährungszustandes erkennen und beobachten?</strong> Erkunden Sie die Stationen und sammeln Sie Hinweise.</p></div>
 <div class="patient-art" aria-label="Animierte Illustration einer älteren Frau im Sitzen">
 <svg viewBox="0 0 240 220" role="img" aria-label="Illustration einer älteren Frau, die ruhig sitzt und atmet">
 <ellipse cx="120" cy="198" rx="70" ry="10" fill="#cbd8e2" opacity=".55"/><g class="person">
@@ -36,17 +36,17 @@
 </svg></div></section>
 <div class="intro"><strong>QR-Code:</strong> Sobald die Lernseite online über einen freigegebenen Link erreichbar ist, kann hier ein QR-Code eingefügt werden. Ein QR-Code mit einer lokalen Datei funktioniert nicht zuverlässig auf den Geräten der Lernenden.</div>
 
-<div class="progressbox"><strong>Dein Lernfortschritt</strong><div class="bar"><div class="fill" id="progress"></div></div><div class="progresslabel" id="progressText">0 von 5</div></div>
-<div class="intro"><strong>Dein Auftrag:</strong> Öffne jede Station. Lies die Informationen, bearbeite die kleinen Aufgaben und merke dir, was für die Pflege wichtig ist. Erst wenn du alle fünf Mini-Aufgaben überprüft und die Stationen als erledigt markiert hast, wird das Abschlussquiz freigeschaltet.</div>
+<div class="progressbox"><strong>Ihr Lernfortschritt</strong><div class="bar"><div class="fill" id="progress"></div></div><div class="progresslabel" id="progressText">0 von 5</div></div>
+<div class="intro"><strong>Ihr Auftrag:</strong> Öffnen Sie jede Station. Lesen Sie die Informationen, bearbeiten Sie die kleinen Aufgaben und merken Sie sich, was für die Pflege wichtig ist. Erst wenn Sie alle fünf Mini-Aufgaben überprüft und die Stationen als erledigt markiert haben, wird das Abschlussquiz freigeschaltet.</div>
 <section class="stations" id="stations">
 <div class="station" data-station="1"><div class="emoji">🥗</div><h2>1 · Ernährungszustand</h2><p>Was sagt der Ernährungszustand aus? Was kann ihn beeinflussen?</p><button onclick="openPanel(1)">Station erkunden</button></div>
 <div class="station" data-station="2"><div class="emoji">⚖️</div><h2>2 · Körpergewicht</h2><p>Warum wiegen wir? Wie misst man richtig und was verfälscht das Ergebnis?</p><button onclick="openPanel(2)">Station erkunden</button></div>
-<div class="station" data-station="3"><div class="emoji">📏</div><h2>3 · Körpergröße</h2><p>Entdecke die korrekte Messung und typische Fehler.</p><button onclick="openPanel(3)">Station erkunden</button></div>
+<div class="station" data-station="3"><div class="emoji">📏</div><h2>3 · Körpergröße</h2><p>Entdecken Sie die korrekte Messung und typische Fehler.</p><button onclick="openPanel(3)">Station erkunden</button></div>
 <div class="station" data-station="4"><div class="emoji">🧵</div><h2>4 · Taillenumfang</h2><p>Was misst der Taillenumfang und was sagen die Werte aus?</p><button onclick="openPanel(4)">Station erkunden</button></div>
-<div class="station" data-station="5"><div class="emoji">🧮</div><h2>5 · BMI</h2><p>Berechne den BMI und lerne seine Aussagekraft und Grenzen kennen.</p><button onclick="openPanel(5)">Station erkunden</button></div>
+<div class="station" data-station="5"><div class="emoji">🧮</div><h2>5 · BMI</h2><p>Berechnen Sie den BMI und lernen Sie seine Aussagekraft und Grenzen kennen.</p><button onclick="openPanel(5)">Station erkunden</button></div>
 </section>
 
-<section class="panel" id="p1"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>🥗 Station 1: Ernährungszustand</h2><h3>Was bedeutet Ernährungszustand?</h3><p>Der <strong>Ernährungszustand</strong> beschreibt, wie gut der Körper mit Energie und Nährstoffen versorgt ist. Dabei spielen die Energieaufnahme, der Energieverbrauch, die Zusammensetzung des Körpers und der Gesundheitszustand eine Rolle.</p><div class="grid2"><div class="info"><h3>🔻 Mangelernährung</h3><p>Der Körper bekommt zu wenig Energie oder wichtige Nährstoffe. Eine Person kann Gewicht oder Muskelmasse verlieren und schwächer werden.</p></div><div class="info"><h3>⚖️ Ausgewogene Versorgung</h3><p>Der Körper erhält passend zu seinem Bedarf Energie und Nährstoffe. Ein einzelner Messwert beweist jedoch nicht, dass alles in Ordnung ist.</p></div><div class="info"><h3>🔺 Überernährung</h3><p>Der Körper nimmt über längere Zeit mehr Energie auf, als er verbraucht. Das kann zu einer Gewichtszunahme führen.</p></div></div><h3>Warum wird der Ernährungszustand beobachtet?</h3><ul><li>Mangelernährung früh erkennen</li><li>Übergewicht einschätzen</li><li>Veränderungen beobachten</li><li>Erfolg von Maßnahmen überprüfen</li><li>Pflege und Ernährung planen</li><li>Komplikationen möglichst vermeiden</li></ul><h3>Was kann den Ernährungszustand beeinflussen?</h3><p>Zum Beispiel: Alter, Krankheiten, Medikamente, Appetit, Kau- oder Schluckprobleme, Bewegung, psychische Belastung, soziale Situation, Geld, Kultur und Essgewohnheiten.</p><div class="callout"><strong>Merke:</strong> Nicht nur Zahlen betrachten. Beobachte die Person, frage nach und beziehe ihre Lebenssituation mit ein.</div><h3>Ernährungsanamnese – Fragen, die helfen</h3><ul><li>Was essen und trinken Sie normalerweise?</li><li>Haben Sie in letzter Zeit weniger Appetit?</li><li>Hat sich Ihr Gewicht verändert?</li><li>Haben Sie Probleme beim Kauen oder Schlucken?</li><li>Können Sie selbstständig essen?</li><li>Gibt es Allergien oder Unverträglichkeiten?</li></ul><h3>Mini-Aufgabe</h3><div class="question"><p>Herr K. isst seit Tagen nur wenige Löffel, sagt, ihm sei oft übel und seine Hose sei lockerer geworden. Was wäre eine sinnvolle erste Handlung?</p><label><input type="radio" name="q1" value="a"> Einfach abwarten, das ist im Alter normal.</label><label><input type="radio" name="q1" value="b"> Sofort die Lieblingsspeise aufzwingen.</label><label><input type="radio" name="q1" value="c"> Beobachten, gezielt nachfragen und Veränderungen bzw. Nahrungsaufnahme dokumentieren; zuständige Fachkraft informieren.</label><button class="btn" onclick="check('q1','c','f1')">Antwort prüfen</button><div id="f1" class="feedback"></div></div><button class="btn" onclick="complete(1)">Station als erledigt markieren ✓</button></section>
+<section class="panel" id="p1"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>🥗 Station 1: Ernährungszustand</h2><h3>Was bedeutet Ernährungszustand?</h3><p>Der <strong>Ernährungszustand</strong> beschreibt, wie gut der Körper mit Energie und Nährstoffen versorgt ist. Dabei spielen die Energieaufnahme, der Energieverbrauch, die Zusammensetzung des Körpers und der Gesundheitszustand eine Rolle.</p><div class="grid2"><div class="info"><h3>🔻 Mangelernährung</h3><p>Der Körper bekommt zu wenig Energie oder wichtige Nährstoffe. Eine Person kann Gewicht oder Muskelmasse verlieren und schwächer werden.</p></div><div class="info"><h3>⚖️ Ausgewogene Versorgung</h3><p>Der Körper erhält passend zu seinem Bedarf Energie und Nährstoffe. Ein einzelner Messwert beweist jedoch nicht, dass alles in Ordnung ist.</p></div><div class="info"><h3>🔺 Überernährung</h3><p>Der Körper nimmt über längere Zeit mehr Energie auf, als er verbraucht. Das kann zu einer Gewichtszunahme führen.</p></div></div><h3>Warum wird der Ernährungszustand beobachtet?</h3><ul><li>Mangelernährung früh erkennen</li><li>Übergewicht einschätzen</li><li>Veränderungen beobachten</li><li>Erfolg von Maßnahmen überprüfen</li><li>Pflege und Ernährung planen</li><li>Komplikationen möglichst vermeiden</li></ul><h3>Was kann den Ernährungszustand beeinflussen?</h3><p>Zum Beispiel: Alter, Krankheiten, Medikamente, Appetit, Kau- oder Schluckprobleme, Bewegung, psychische Belastung, soziale Situation, Geld, Kultur und Essgewohnheiten.</p><div class="callout"><strong>Merke:</strong> Nicht nur Zahlen betrachten. Beobachten Sie die Person, fragen Sie nach und beziehen Sie ihre Lebenssituation mit ein.</div><h3>Ernährungsanamnese – Fragen, die helfen</h3><ul><li>Was essen und trinken Sie normalerweise?</li><li>Haben Sie in letzter Zeit weniger Appetit?</li><li>Hat sich Ihr Gewicht verändert?</li><li>Haben Sie Probleme beim Kauen oder Schlucken?</li><li>Können Sie selbstständig essen?</li><li>Gibt es Allergien oder Unverträglichkeiten?</li></ul><h3>Mini-Aufgabe</h3><div class="question"><p>Herr K. isst seit Tagen nur wenige Löffel, sagt, ihm sei oft übel und seine Hose sei lockerer geworden. Was wäre eine sinnvolle erste Handlung?</p><label><input type="radio" name="q1" value="a"> Einfach abwarten, das ist im Alter normal.</label><label><input type="radio" name="q1" value="b"> Sofort die Lieblingsspeise aufzwingen.</label><label><input type="radio" name="q1" value="c"> Beobachten, gezielt nachfragen und Veränderungen bzw. Nahrungsaufnahme dokumentieren; zuständige Fachkraft informieren.</label><button class="btn" onclick="check('q1','c','f1')">Antwort prüfen</button><div id="f1" class="feedback"></div></div><button class="btn" onclick="complete(1)">Station als erledigt markieren ✓</button></section>
 <section class="panel" id="p2"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>⚖️ Station 2: Körpergewicht</h2><h3>Warum wird das Körpergewicht gemessen?</h3><div class="grid2"><div class="info"><strong>Ernährungszustand</strong><p>Untergewicht, Übergewicht oder mögliche Mangelernährung erkennen.</p></div><div class="info"><strong>Gesundheitsbeobachtung</strong><p>Gewichtsveränderungen können Hinweise geben, etwa auf Flüssigkeitseinlagerungen oder Flüssigkeitsverlust.</p></div><div class="info"><strong>Medikamente</strong><p>Manche Arzneimittel werden anhand des Gewichts dosiert. Medikamente können außerdem das Gewicht verändern.</p></div><div class="info"><strong>Verlaufskontrolle</strong><p>Regelmäßige Messungen helfen, Veränderungen und den Erfolg von Maßnahmen zu beobachten.</p></div></div><h3>Welche Waagen gibt es?</h3><p>Je nach Mobilität und Alter der pflegebedürftigen Person wird eine passende Waage ausgewählt. Die folgenden Abbildungen stammen aus dem Lehrerskript.</p>
 <div class="grid2">
 <div class="info"><img src="44.png?v=20261123b" alt="Standwaage aus dem Lehrerskript" loading="lazy" style="display:block;width:100%;height:190px;object-fit:contain;background:#fff;border-radius:10px;margin-bottom:12px"><strong>Standwaage</strong><p>Für Personen, die sicher stehen können.</p></div>
@@ -69,7 +69,7 @@
 <path d="M61 219 L82 219 L85 231 L55 231Z M98 219 L120 219 L126 231 L96 231Z" fill="#ffffff" stroke="#7e98a7" stroke-width="2"/>
 </svg></div>
 <div style="flex:1 1 240px"><p><strong>Das ist Jonas.</strong> Er ist 29 Jahre alt, 1,80 m groß und wiegt 100 kg. Jonas trainiert regelmäßig Kraftsport und besitzt sehr viel Muskelmasse.</p>
-<p><strong>Dein Auftrag:</strong> Berechne seinen BMI und überlege, was das Ergebnis über seinen Körperfettanteil aussagt.</p></div></div>
+<p><strong>Ihr Auftrag:</strong> Berechnen Sie seinen BMI und überlegen Sie, was das Ergebnis über seinen Körperfettanteil aussagt.</p></div></div>
 <div class="question"><p><strong>1. Welchen BMI hat Jonas? (auf eine Nachkommastelle gerundet)</strong></p>
 <label><input type="radio" name="jonasBmi" value="a"> 24,9 kg/m²</label>
 <label><input type="radio" name="jonasBmi" value="b"> 30,9 kg/m²</label>
@@ -82,8 +82,8 @@
 <button class="btn" onclick="checkJonasGrenze()">Beurteilung prüfen</button><div id="jonasGrenzeFeedback" class="feedback" aria-live="polite"></div></div>
 <div class="callout"><strong>Merke:</strong> Muskelmasse wiegt ebenfalls. Der BMI beschreibt nur das Verhältnis von Gewicht zu Größe – nicht, wie viel davon Fett oder Muskeln sind. Auch bei einem muskulösen Menschen sollten weitere Beobachtungen und gegebenenfalls geeignete Messverfahren in die Einschätzung einfließen.</div>
 </div><h3>Mini-Aufgabe</h3><div class="question"><p>Welche Aussage über den BMI ist richtig?</p><label><input type="radio" name="q5" value="a"> Der BMI zeigt ganz genau, wie viel Körperfett eine Person hat.</label><label><input type="radio" name="q5" value="b"> Ein BMI ersetzt die pflegerische Einschätzung.</label><label><input type="radio" name="q5" value="c"> Der BMI ist eine Orientierung; er berücksichtigt zum Beispiel Muskelmasse und Fettverteilung nicht ausreichend.</label><button class="btn" onclick="check('q5','c','f5')">Antwort prüfen</button><div id="f5" class="feedback"></div></div><button class="btn" onclick="complete(5)">Station als erledigt markieren ✓</button></section>
-<section class="finish locked" id="finish" hidden style="display:none"><h2>🔒 Abschlussquiz</h2><p id="unlockText">Noch gesperrt: Bearbeite und überprüfe die Mini-Aufgaben aller fünf Stationen. Markiere anschließend jede Station als erledigt.</p><button class="btn" id="quizStart" onclick="openQuiz()" disabled>🔒 Abschlussquiz gesperrt</button></section>
-<section class="panel" id="quiz"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>🎯 Abschlussquiz</h2><p>Beantworte alle fünf Fragen: vier Multiple-Choice-Aufgaben und eine Freitextfrage. Wähle jeweils eine Antwort aus.</p>
+<section class="finish locked" id="finish" hidden style="display:none"><h2>🔒 Abschlussquiz</h2><p id="unlockText">Noch gesperrt: Bearbeiten und überprüfen Sie die Mini-Aufgaben aller fünf Stationen. Markieren Sie anschließend jede Station als erledigt.</p><button class="btn" id="quizStart" onclick="openQuiz()" disabled>🔒 Abschlussquiz gesperrt</button></section>
+<section class="panel" id="quiz"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>🎯 Abschlussquiz</h2><p>Beantworten Sie alle fünf Fragen: vier Multiple-Choice-Aufgaben und eine Freitextfrage. Wählen Sie jeweils eine Antwort aus.</p>
 <div class="question"><strong>1. Was ist bei Frau Weber ein Hinweis auf eine mögliche Veränderung des Ernährungszustandes?</strong>
 <label><input type="radio" name="final1" value="a"> Sie isst wenig und ihre Kleidung sitzt lockerer.</label>
 <label><input type="radio" name="final1" value="b"> Sie trägt eine Brille.</label>
@@ -100,10 +100,10 @@
 <label><input type="radio" name="final4" value="a"> Das Maßband liegt waagerecht; abgelesen wird am Ende einer normalen Ausatmung.</label>
 <label><input type="radio" name="final4" value="b"> Das Maßband wird möglichst fest eingeschnürt.</label>
 <label><input type="radio" name="final4" value="c"> Die Messung erfolgt während einer tiefen Einatmung.</label></div>
-<div class="question"><strong>5. Freitext: Warum kann der BMI bei einem sehr muskulösen Menschen täuschen?</strong><textarea id="final5" rows="3" style="width:100%;margin-top:8px;border:1px solid #bdcbd7;border-radius:8px;padding:9px" placeholder="Erkläre es in 1–2 Sätzen ..."></textarea></div>
+<div class="question"><strong>5. Freitext: Warum kann der BMI bei einem sehr muskulösen Menschen täuschen?</strong><textarea id="final5" rows="3" style="width:100%;margin-top:8px;border:1px solid #bdcbd7;border-radius:8px;padding:9px" placeholder="Erklären Sie es in 1–2 Sätzen ..."></textarea></div>
 <button class="btn" id="quizSubmit" onclick="showQuizAnswers()">Antworten abgeben und auswerten</button><div id="quizFeedback" class="result hide" aria-live="polite"></div></section>
-<section class="panel" id="review"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>📝 Deine Auswertung und Fehlerübersicht</h2><p>Vergleiche deine Antworten mit den Musterlösungen. Vier Multiple-Choice-Fragen werden automatisch bewertet. Die Freitextfrage vergleichst du selbst mit der Musterlösung.</p><div id="reviewContent"></div><div id="reviewStatus" class="callout">Prüfe alle offenen Antworten.</div><button class="btn" id="praiseUnlock" onclick="openPraise()" disabled>🔒 Abschlussseite freischalten</button></section>
-<section class="panel" id="praise"><div class="celebrate"><div class="big" aria-hidden="true">🎉🌟</div><h2>Herzlichen Glückwunsch!</h2><p><strong>Du hast die Lernreise zum Ernährungszustand geschafft!</strong></p><p>Du hast beobachtet, gerechnet, nachgedacht und deine Antworten überprüft. Darauf kannst du stolz sein!</p><p>Dein Wissen hilft dir dabei, Veränderungen bei Pflegeempfängern wie Frau Weber aufmerksam wahrzunehmen.</p><button class="btn" onclick="home()">Zurück zur Lerninsel</button></div></section>
+<section class="panel" id="review"><button class="btn back" onclick="home()">← Zur Übersicht</button><h2>📝 Ihre Auswertung und Fehlerübersicht</h2><p>Vergleichen Sie Ihre Antworten mit den Musterlösungen. Vier Multiple-Choice-Fragen werden automatisch bewertet. Die Freitextfrage vergleichen Sie selbst mit der Musterlösung.</p><div id="reviewContent"></div><div id="reviewStatus" class="callout">Prüfen Sie alle offenen Antworten.</div><button class="btn" id="praiseUnlock" onclick="openPraise()" disabled>🔒 Abschlussseite freischalten</button></section>
+<section class="panel" id="praise"><div class="celebrate"><div class="big" aria-hidden="true">🎉🌟</div><h2>Herzlichen Glückwunsch!</h2><p><strong>Sie haben die Lernreise zum Ernährungszustand geschafft!</strong></p><p>Sie haben beobachtet, gerechnet, nachgedacht und Ihre Antworten überprüft. Darauf können Sie stolz sein!</p><p>Ihr Wissen hilft Ihnen dabei, Veränderungen bei Pflegeempfängern wie Frau Weber aufmerksam wahrzunehmen.</p><button class="btn" onclick="home()">Zurück zur Lerninsel</button></div></section>
 </main><footer>Interaktive Lernseite · Beobachtung des Ernährungszustandes · Lernmaterial für den Unterricht</footer>
 <script>
 
@@ -130,7 +130,7 @@ function updateProgress(){
  finish.classList.toggle('locked',!unlocked);
  btn.disabled=!unlocked;
  btn.textContent=unlocked?'🎯 Abschlussquiz starten':'🔒 Abschlussquiz gesperrt';
- document.getElementById('unlockText').textContent=unlocked?'Alle fünf Stationen sind erledigt. Du kannst jetzt das Abschlussquiz bearbeiten!':'Noch gesperrt: '+(5-n)+' Station(en) fehlen. Beantworte und prüfe die Mini-Aufgaben und markiere jede Station als erledigt.';
+ document.getElementById('unlockText').textContent=unlocked?'Alle fünf Stationen sind erledigt. Sie können jetzt das Abschlussquiz bearbeiten!':'Noch gesperrt: '+(5-n)+' Station(en) fehlen. Beantworten und prüfen Sie die Mini-Aufgaben und markieren Sie jede Station als erledigt.';
 }
 function hidePanels(){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'))}
 function showPanel(id){hidePanels();const p=document.getElementById(id);p.classList.add('active');p.scrollIntoView({behavior:'smooth',block:'start'})}
@@ -138,7 +138,7 @@ function openPanel(n){showPanel('p'+n)}
 function home(){hidePanels();window.scrollTo({top:0,behavior:'smooth'})}
 function complete(n){
  const f=document.getElementById('f'+n);
- if(!attempted.has(n)||(n===5&&jonasAttempted.size!==2)){f.textContent='Bitte beantworte und überprüfe alle Fragen dieser Station (in Station 5 auch beide Jonas-Fragen). Erst danach kannst du die Station abschließen.';f.className='feedback wrong';f.scrollIntoView({behavior:'smooth',block:'center'});return}
+ if(!attempted.has(n)||(n===5&&jonasAttempted.size!==2)){f.textContent='Bitte beantworte und überprüfe alle Fragen dieser Station (in Station 5 auch beide Jonas-Fragen). Erst danach können Sie die Station abschließen.';f.className='feedback wrong';f.scrollIntoView({behavior:'smooth',block:'center'});return}
  done.add(n);updateProgress();
  const btn=document.querySelector('#p'+n+' button[onclick^="complete"]');
  btn.textContent='Erledigt ✓';btn.classList.add('secondary');
@@ -146,28 +146,28 @@ function complete(n){
 }
 function check(name,correct,feedbackId){
  const chosen=document.querySelector('input[name="'+name+'"]:checked'),el=document.getElementById(feedbackId),n=Number(name.slice(1));
- if(!chosen){el.textContent='Bitte wähle zuerst eine Antwort.';el.className='feedback wrong';return}
+ if(!chosen){el.textContent='Bitte wählen Sie zuerst eine Antwort.';el.className='feedback wrong';return}
  attempted.add(n);
  if(chosen.value===correct){el.textContent='Richtig! Gut erkannt.';el.className='feedback correct'}
- else{stationMistakes.set(n,{answer:chosen.parentElement.textContent.trim(),solution:stationSolutions[n]});el.textContent='Noch nicht richtig. Du kannst die Station später in der Auswertung wiederholen.';el.className='feedback wrong'}
+ else{stationMistakes.set(n,{answer:chosen.parentElement.textContent.trim(),solution:stationSolutions[n]});el.textContent='Noch nicht richtig. Sie können die Station später in der Auswertung wiederholen.';el.className='feedback wrong'}
 }
 function calcBMI(){
  const w=Number(document.getElementById('weight').value),h=Number(document.getElementById('height').value)/100,box=document.getElementById('bmiResult');
- if(!w||!h||w<=0||h<=0){box.textContent='Bitte gib ein gültiges Gewicht und eine Körpergröße ein.';box.classList.remove('hide');return}
+ if(!w||!h||w<=0||h<=0){box.textContent='Bitte geben Sie ein gültiges Gewicht und eine Körpergröße ein.';box.classList.remove('hide');return}
  const bmi=w/(h*h),cat=bmi<18.5?'Untergewicht':bmi<25?'Normalgewicht':bmi<30?'Übergewicht':bmi<35?'Adipositas Grad I':bmi<40?'Adipositas Grad II':'Adipositas Grad III';
- box.textContent='Dein BMI: '+bmi.toFixed(1)+' kg/m² – '+cat+'. Der BMI ist nur ein Orientierungswert.';box.classList.remove('hide');
+ box.textContent='Ihr BMI: '+bmi.toFixed(1)+' kg/m² – '+cat+'. Der BMI ist nur ein Orientierungswert.';box.classList.remove('hide');
 }
 function checkJonasBmi(){
  const x=document.querySelector('input[name="jonasBmi"]:checked'),f=document.getElementById('jonasBmiFeedback');
- if(!x){f.textContent='Bitte wähle eine Antwort aus.';f.className='feedback wrong';return}
+ if(!x){f.textContent='Bitte wählen Sie eine Antwort aus.';f.className='feedback wrong';return}
  jonasAttempted.add('bmi');if(x.value==='b'){f.textContent='Richtig! 100 ÷ (1,80 × 1,80) = 30,9 kg/m².';f.className='feedback correct'}
- else{f.textContent='Versuche es noch einmal: Gewicht durch Körpergröße zum Quadrat teilen.';f.className='feedback wrong'}
+ else{f.textContent='Versuchen Sie es noch einmal: Gewicht durch Körpergröße zum Quadrat teilen.';f.className='feedback wrong'}
 }
 function checkJonasGrenze(){
  const x=document.querySelector('input[name="jonasGrenze"]:checked'),f=document.getElementById('jonasGrenzeFeedback');
- if(!x){f.textContent='Bitte wähle eine Antwort aus.';f.className='feedback wrong';return}
+ if(!x){f.textContent='Bitte wählen Sie eine Antwort aus.';f.className='feedback wrong';return}
  jonasAttempted.add('grenze');if(x.value==='c'){f.textContent='Richtig! Der BMI unterscheidet Muskel- und Fettmasse nicht.';f.className='feedback correct'}
- else{f.textContent='Überlege, ob der BMI Fett und Muskeln getrennt misst.';f.className='feedback wrong'}
+ else{f.textContent='Überlegen Sie, ob der BMI Fett und Muskeln getrennt misst.';f.className='feedback wrong'}
 }
 function openQuiz(){if(done.size!==5||attempted.size!==5||jonasAttempted.size!==2){document.getElementById('unlockText').scrollIntoView({behavior:'smooth'});return}showPanel('quiz')}
 const quizQuestions=[
@@ -183,29 +183,29 @@ function showQuizAnswers(){
  const choices=[1,2,3,4].map(i=>document.querySelector('input[name="final'+i+'"]:checked'));
  const free=document.getElementById('final5').value.trim();
  if(choices.some(x=>!x)||!free){
-  const b=document.getElementById('quizFeedback');b.textContent='Bitte beantworte alle fünf Fragen, bevor du das Quiz abgibst.';b.classList.remove('hide');return;
+  const b=document.getElementById('quizFeedback');b.textContent='Bitte beantworten Sie alle fünf Fragen, bevor Sie das Quiz abgeben.';b.classList.remove('hide');return;
  }
  quizSubmitted=true;reviewedAnswers.clear();
  const target=document.getElementById('reviewContent');target.replaceChildren();
  if(stationMistakes.size){
-  target.append(make('h3',null,'Deine Fehler aus den Lernstationen'));
+  target.append(make('h3',null,'Ihre Fehler aus den Lernstationen'));
   for(const [n,m] of [...stationMistakes.entries()].sort((a,b)=>a[0]-b[0])){
-   const box=make('div','review-item');box.append(make('h3',null,'Station '+n),make('p',null,'Deine frühere Antwort: '+m.answer),make('p',null,'Richtige Antwort: '+m.solution));target.append(box);
+   const box=make('div','review-item');box.append(make('h3',null,'Station '+n),make('p',null,'Ihre frühere Antwort: '+m.answer),make('p',null,'Richtige Antwort: '+m.solution));target.append(box);
   }
  }else target.append(make('p','result','In den Lernstationen wurden keine falschen Antworten registriert.'));
- target.append(make('h3',null,'Dein Abschlussquiz – automatische Auswertung'));
+ target.append(make('h3',null,'Ihr Abschlussquiz – automatische Auswertung'));
  let score=0;
  quizQuestions.forEach((q,i)=>{
   const box=make('div','review-item');box.append(make('h3',null,q.title));
   if(i<4){
    const chosen=choices[i],correct=chosen.value===q.correct;
    if(correct)score++;
-   box.append(make('p',null,'Deine Antwort: '+chosen.parentElement.textContent.trim()));
+   box.append(make('p',null,'Ihre Antwort: '+chosen.parentElement.textContent.trim()));
    box.append(make('p',correct?'correct':'wrong',correct?'✓ Richtig beantwortet':'✗ Nicht richtig beantwortet'));
    box.append(make('p',null,'Richtige Antwort: '+q.answer));
    reviewedAnswers.add(i);
   }else{
-   box.append(make('p',null,'Deine Antwort: '+free),make('p',null,'Musterlösung: '+q.answer));
+   box.append(make('p',null,'Ihre Antwort: '+free),make('p',null,'Musterlösung: '+q.answer));
    const label=make('label','selfcheck');
    const cb=document.createElement('input');cb.type='checkbox';cb.addEventListener('change',()=>markReviewed(i,cb.checked));
    label.append(cb,document.createTextNode('Ich habe meine Freitextantwort mit der Musterlösung verglichen.'));
@@ -221,7 +221,7 @@ function updateReviewStatus(){
  const ready=quizSubmitted&&reviewedAnswers.size===5;
  document.getElementById('praiseUnlock').disabled=!ready;
  document.getElementById('praiseUnlock').textContent=ready?'🎉 Abschlussseite öffnen':'🔒 Abschlussseite freischalten';
- document.getElementById('reviewStatus').textContent=ready?'Sehr gut! Du hast deine Freitextantwort überprüft. Deine Abschlussseite ist freigeschaltet.':'Vergleiche bitte deine Freitextantwort mit der Musterlösung und bestätige dies.';
+ document.getElementById('reviewStatus').textContent=ready?'Sehr gut! Sie haben Ihre Freitextantwort überprüft. Ihre Abschlussseite ist freigeschaltet.':'Vergleichen Sie bitte Ihre Freitextantwort mit der Musterlösung und bestätigen Sie dies.';
 }
 function openPraise(){if(quizSubmitted&&reviewedAnswers.size===5&&done.size===5)showPanel('praise')}
 document.querySelectorAll('#p1 input[type="radio"],#p2 input[type="radio"],#p3 input[type="radio"],#p4 input[type="radio"],#p5 input[type="radio"]').forEach(input=>input.addEventListener('change',()=>{
